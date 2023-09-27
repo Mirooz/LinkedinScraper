@@ -24,9 +24,5 @@ public class BatchConfiguration {
         this.context = context;
     }
 
-    public void invokeJob(String jobName, JobParameters jobParameters) throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
-        var jobToStart = context.getBean(jobName, Job.class);
-        jobLauncher.run(jobToStart, jobParameters);
-    }
 
 }

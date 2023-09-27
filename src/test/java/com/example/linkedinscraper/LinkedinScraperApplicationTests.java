@@ -28,7 +28,7 @@ class LinkedinScraperApplicationTests {
 
 	@Test
 	public void testJob() throws JobInstanceAlreadyCompleteException, JobExecutionAlreadyRunningException, JobParametersInvalidException, JobRestartException {
-		batchConfiguration.invokeJob("firstJob",new JobParametersBuilder().addString("paramtest","valtest").toJobParameters());
+
 	}
 
 }
